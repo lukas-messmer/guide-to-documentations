@@ -1,0 +1,14 @@
+@startgantt
+' See https://plantuml.com/de/gantt-diagram
+
+language de
+projectscale weekly
+
+Project starts 2025-01-01
+[Ideenfindung] as [T1] starts 2025-01-01 and ends 2025-02-01
+[Abschluss Ideenfindung] as [M1] happens 2025-02-01
+[Programmierung] as [T2] starts 2025-02-01 and ends 2025-05-01
+[Go-Live] as [M2] happens 2025-05-01
+[Präsentation] as [M3] happens 2025-05-18
+
+@endgantt
