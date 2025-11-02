@@ -11,4 +11,4 @@
 	)
 
 #include "chapters/01_introduction.typ"
-#include "chapters/02_organization.typ"
+#include "chapters/02_getting_started.typ"

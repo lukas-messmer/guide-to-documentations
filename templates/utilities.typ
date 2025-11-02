@@ -45,3 +45,23 @@
 		]
 	}
 ]
+
+#let falacy(content) = {
+   block(
+       fill: rgb("#fdb4b8"),
+       width: 100%,
+       radius: 4pt,
+       inset: 8pt,
+       text(1em, content)
+   )
+}
+
+#let important(content) = {
+    block(
+        fill: rgb("#e1e5ea"),
+        width: 100%,
+        radius: 4pt,
+        inset: 8pt,
+        text(1em, content)
+    )
+}
