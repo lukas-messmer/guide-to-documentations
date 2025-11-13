@@ -2,6 +2,30 @@
 
 #let template(doc) = [
 
+    #set page(
+        header-ascent: 35% + 0pt,
+        header: context [
+            #set text(size: 8pt)
+            #grid(
+                columns: (1fr, 1fr),
+                align: (left, right),
+                institute,
+                author
+            )
+        ],
+        footer-descent: 35% + 0pt,
+        footer: context [
+            #set text(size: 8pt)
+            #grid(
+                columns: (1fr, 1fr, 1fr),
+                align: (left, center, right),
+                project_shortname,
+                datetime.today().display("[day].[month].[year]"),
+                counter(page).display("1/1", both: true)
+            )
+        ]
+    )
+
 	#set text(font: "Noto Sans",
 			  size: 11pt,
 			  fill: rgb("333333"),

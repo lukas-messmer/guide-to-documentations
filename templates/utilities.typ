@@ -46,22 +46,22 @@
 	}
 ]
 
-#let falacy(content) = {
-   block(
-       fill: rgb("#fdb4b8"),
-       width: 100%,
-       radius: 4pt,
-       inset: 8pt,
-       text(1em, content)
-   )
-}
-
-#let important(content) = {
+#let highlight_block(fill, left_head, right_head: none, content) = {
     block(
-        fill: rgb("#e1e5ea"),
+        fill: fill,
         width: 100%,
         radius: 4pt,
         inset: 8pt,
-        text(1em, content)
+        {
+            text(0.6em, weight: "bold", tracking: 0.05em, left_head)
+            h(1fr)
+            if right_head != none { text(0.6em)[Beware of this falacy] }
+            parbreak()
+            text(1em, content)
+        }
     )
 }
+
+#let fallacy(content) = highlight_block(rgb("#fdb4b8"), [Beware of this fallacy:], content)
+
+#let important(content) = highlight_block(rgb("#e1e5ea"), [Keep this in mind:], content)

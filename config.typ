@@ -1,5 +1,5 @@
 #let author = "Lukas Messmer"
 #let document_type = "Projektplanung"
-#let project_name = "Lukas' Guide to Documentations"
+#let project_name = "A Software Craftsman's Guide to Documentations"
 #let project_shortname = "Vorlage Projektplanung"
 #let institute = "I3 Institut für Interaktive Informatik"
