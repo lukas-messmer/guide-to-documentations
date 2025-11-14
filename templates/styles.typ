@@ -28,8 +28,7 @@
 
 	#set text(font: "Noto Sans",
 			  size: 11pt,
-			  fill: rgb("333333"),
-			  tracking: 0.2pt )
+			  fill: rgb("323232"))
 
 	#set par(leading: 0.8em,
 			 justify: true)
@@ -48,15 +47,14 @@
 		v(0.4em)
 	}
 
-	#show link: set text(blue)
-	#show ref: set text(blue)
+	#show link: set text(rgb("3788c1"))
+	#show ref: set text(rgb("3788c1"))
 
 	#show table: set par(justify: false)
 	#set table(inset: 8pt,
 			   stroke: 1pt + rgb("#EEEEEE") )
 
-    #set text(lang: "de")
-	#set ref(supplement: "Abschnitt")
+    #set text(lang: "en")
 	
 	#doc
 ]

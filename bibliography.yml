@@ -1,0 +1,17 @@
+java-doc:
+  type: web
+  title: "Java Platform, Standard Edition Java API Reference"
+  author: Oracle
+  date: 2025-10-07
+  url:
+    value: https://docs.oracle.com/en/java/javase/25/docs/api/index.html
+    date: 2025-11-14
+  
+cppreference:
+  type: web
+  title: "C++ Reference"
+  author: C++ Community
+  date: 2025-10-07
+  url:
+    value: https://cppreference.com/
+    date: 2025-11-14

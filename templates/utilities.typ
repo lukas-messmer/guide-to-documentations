@@ -46,9 +46,10 @@
 	}
 ]
 
-#let highlight_block(fill, left_head, right_head: none, content) = {
+#let highlight_block(fill, stroke_color, left_head, right_head: none, content) = {
     block(
         fill: fill,
+        stroke: 1pt + stroke_color,
         width: 100%,
         radius: 4pt,
         inset: 8pt,
@@ -62,6 +63,6 @@
     )
 }
 
-#let fallacy(content) = highlight_block(rgb("#fdb4b8"), [Beware of this fallacy:], content)
+#let fallacy(content) = highlight_block(rgb("feeeef"), rgb("fdadb2"), [Beware of this fallacy:], content)
 
-#let important(content) = highlight_block(rgb("#e1e5ea"), [Keep this in mind:], content)
+#let important(content) = highlight_block(rgb("ecf6fd"), rgb("a2d4f8"), [Keep this in mind:], content)

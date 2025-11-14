@@ -3,9 +3,9 @@
 
 = Getting Started
 
-== The No. 1 Question
+== The No. 1 Question <the-no-1-question>
 
-Everything has to start somewhere. When talking about documentations, you might think that this means opening a text editor and thinking about which structure to use or which chapters are needed. But before you even dare to write the first sentence, you need to ask yourself one crucial question.
+Everything has to start somewhere. When talking about documentations, you might think that this means opening a text editor and thinking about which chapters are needed or which template to use. But before you even think about writing your first sentence, you need to ask yourself one crucial question:
 
 #important[
     Who am I writing documentations for and what do these people need to know?
@@ -26,16 +26,16 @@ For this reason, the question is especially important as it does not only determ
 In order to answer the question "Who am I writing documentations for and what do these people need to know?", one must examine the potential readers of their documentation in more detail. Generally speaking, if you want to find an answer to this question, you have to ask yourself further questions such as these:
 
 - Am I writing this documentation for a software architect / project lead / developer? 
-- How does this person want to read my documentation (e.g. PDFs, inline hints)?
 - Does this person require specific information (e.g. charts, schedules, code)?
-- What domain-specific words does this person use?
+- What prior knowledge does this person have (e.g. domain-specific words)?
+- How does this person want to read my documentation (e.g. PDFs, inline hints)?
 
 Luckily for us, there were already many people before us who had to deal with the same questions. What they came up with is a plethora of different models, documentation types and concepts, each tailored to a specific group of potential readers. All we need to do now is to apply these ideas to whatever it is we want to document.
 
 #pagebreak()
 === Recommended Approach
 
-Instead of reinventing the wheel, we recommend familiarizing yourself with the different types of documentation available in order to understand *who* they are intended for, *what* they contain, and *how* they are written. After that, all you have to do is to decide which documentation types are most suitable for the readers interested in my software.
+Instead of reinventing the wheel, we recommend familiarizing yourself with the different types of documentation available in order to understand *who* they are intended for, *what* they contain, and *how* they are written. After that, all you have to do is to decide which documentation types are most suitable for the readers interested in your software.
 
 Here is a concept that can help you with this:
 
@@ -45,7 +45,7 @@ Here is a concept that can help you with this:
 
 #documentation_overview()
 
-Note that not all software attracts the same kind of readers. An open-source library that solves a specific problem has a different target audience for its documentation than an internal application for managing customers. The software you want to document determines the documentation types you should use, and it's rarely necessary to use all available types. After all, you wouldn't use everything in your refrigerator to bake a cake.
+It is important to note that not all software attracts the same kind of readers. An open-source library that solves a specific problem has a different target audience for its documentation than an internal application for managing customers. The software you want to document determines the documentation types you should use, and it's rarely necessary to use all available types. After all, you wouldn't use every ingredient in your refrigerator to bake a cake.
 
 #fallacy[
     Don't try to use all documentation types available. Different software solutions attract different kinds of documentation readers. Only document what these readers actually want to know.
@@ -84,28 +84,34 @@ Important: These questions aren't meant as a strict rule you should follow all t
 
 == Documentation Types
 
-After reading section XY, you should now understand that diffrent software attracts diffrent kind of documentation readers and that there are diffrent kind of documentation types that we can use to meet does readers demand. The next thing we have to do is to understand how these documentation types differ from one another and how to actually write them.
+After reading @the-no-1-question, you should now understand that different software attracts different kinds of documentation readers and that there are different documentation types we can use to address these audiences. Our next step is to understand how these documentation types differ from one another and how we can actually write them.
 
-Here's the answer to the first question:
+We will start by addressing the first question:
 
 #important[
-    The diffrent documentation types differ in these things:
-
-        - Reader: The people who want to read this documentation type
-        - Format: How this documentation type should be presented to the reader
-        - Tooling: How this documentation type should be written by the author
-        - Content: What the documentation type should contain
-        - Best Practices: What we should aim for when writting this documentation type
+    The different types of documentation differ in the following aspects:
+    
+    - *Readers*: Which people are interested in this documentation type
+    - *Format*: How this documentation type should be presented to the reader
+    - *Tools*: How this documentation type should be written by the author
+    - *Content*: What this documentation type should contain
+    - *Best Practices*: What we should strive for when writing this documentation type
 ]
 
-We already discuessed that understanding the target audience of your documentation is a cruical part in writing something that is actually useful. However, the other aspects (format, tooling, etc.) are equaly important in writing good and maintainable documentations. Think of code documentations: You probably already used websites like (...) where you can look for information about a specfic piece of code you need to use. You probably expect some sort of filter to find things like classes, functions and similar and you probably also expect links to relating code pieces and so on. Now imagen how cumbersom it would be to find your code pieces in a 1000 pages long PDF.
+We already discussed that understanding the target audience of your documentation is crucial for creating content with genuine value. However, other aspects such as format and tooling are equally important for writing usable and maintainable documentations. 
 
-This is why it's important to differentate between the diffrent types of documentation.
+Think about code documentations: You probably have already used websites such as #link("https://docs.oracle.com/en/java/javase/25/docs/api/index.html")[Java Doc] @java-doc or #link("https://cppreference.com/")[CPP Reference] @cppreference to search for information about a specific piece of code that you need to use. What do you expect when using such a documentation? Perhaps a hierarchical view for classes? Maybe a search bar to find specific functions? Whatever it is, it's probably better than a 250-page PDF with code documentation written in prose like some kind of Shakespeare novel (We are looking at you, Latex).
 
-#fallacy[
-    Don't blindly apply the same concepts, ideas or principles from one documentation type to another. While some documentation types may have overlaps, it's important to understand that some core principles may be fundamentaly diffrent, especaially when dealing with documentation types of diffrent levels.
+While this line of thought may seem obvious for documentation tools and formats, the same principle also applies to concepts and best practices:
+
+#fallacy[   
+    Do not blindly apply the same concepts, ideas, and best practices from one documentation type to another. While some documentation types may have overlaps, it is important to understand that some fundamental principles may differ significantly, especially when dealing with documentation types at different levels.
 ]
 
+#pagebreak()
+
+Another thing we would like to address, which we found frequently in student work:
+
 #fallacy[
-    Don't try to fit every documentation type into the same format (e.g. putting both your architecture and code documentation in the same PDF). If you have to do this (e.g. for archiving purposes) make sure to obviously sepearte these parts.
+    Do not try to force all documentation types into the same format (e.g. putting your architecture and code documentation together in the same PDF). If you must do this (e.g. for archiving purposes), be sure to clearly separate these parts.
 ]

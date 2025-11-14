@@ -4,7 +4,7 @@ install: install_fonts install_plantuml
 
 compile_typst:
 	# without interactive mode make doesn't know wsl's aliases, so typst.exe is a fallback for windows
-	typst.exe compile main.typ --font-path ./assets/fonts
+	typst compile main.typ --font-path ./assets/fonts
 	@echo "Completed typst compilation"
 
 gen_appendix:
